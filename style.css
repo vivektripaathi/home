@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: serif;
+    background-color: rgb(227, 241, 245);
+}
+
+
+/* Navigation Bar */
+.navbar{
+    background-color: rgb(227, 241, 245);
+    padding:0;
+    margin: 0;
+    height: 100px;
+}
+.bitmoji{
+    padding: 1% 19% 1% 1%;
+    float: right;
+    width: 72px;
+}
+.navSection{
+    position: absolute;
+    left: 10%;
+}
+li{
+    font-family: sans-serif;
+    padding: 23%;
+    font-size: 20px;
+}
+a{
+    color: rgb(53, 190, 190);
+    text-decoration: none;
+}
+.nav-ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Top Container */
+.top-container{
+    margin-top: 6%;
+    background-color: rgb(227, 241, 245);
+}
+.mountain-img{
+    margin-top: 60px;
+    width: 50%;
+}
+h1{
+    display: inline;
+    font-family: 'Great Vibes', cursive;
+    font-size: 5em;
+    color: rgb(5, 197, 187);
+}
+.sub-heading{
+    color: #31bea0;
+    margin: 0 auto;
+    font-size: 1.8em;
+    font-family: 'Pacifico', cursive;
+}
+.mountain-holder{
+    margin: auto;
+}
+
+/* Middle Section */
+.middle-section{
+    background-color: rgb(241, 241, 241);
+    padding-top: 100px;
+}
+
+/* Hey Section */
+.hi{
+    width: 50%;
+    margin: auto;
+}
+.main-image{
+    width: 25%;
+}
+h3{
+    font-size: 2em;
+    color: rgb(5, 197, 187);
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0;
+}
+.intro{
+    width: 65%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: grey;
+    line-height: 2;
+}
+hr{
+    border: dotted rgb(202, 198, 198) 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+/* What I can Do Section */
+
+h4{
+    color: #31bea0;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.design{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: grey;
+}
+.man-bitmoji{
+    width: 21%;
+    float: right;
+    margin-left: 50px;
+}
+.develop{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: grey;
+}
+.develop-bitmoji{
+    width: 25%;
+    float: left;
+    margin-right: 50px;
+}
+
+/* I can help */
+.icanhelp{
+    width: 50%;
+    margin: 100px auto;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: grey;
+}
+.message-me{
+    display: inline;
+    color: grey;
+}
+.mail-box{
+    margin: 100px 35%;
+    background-color: #45b29a;
+    border: 5px solid #45b29a;
+}
+.last-hr{
+    border: dotted rgb(241, 241, 241) 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 50px auto;
+}
+
+
+/* Footer Section */
+.footer-social-media{
+    display: flex;
+    width: 50%;
+    /* margin: auto; */
+}
+.footer-ul{
+    display: flex;
+    font-family: sans-serif;
+    padding: 0;
+    margin-left: 30%;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-left: 6px solid #45b29a;
+}
+.footer-copyright{
+    display: inline;
+    width: 50%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: grey;
+    margin-bottom: 100px;
+}
