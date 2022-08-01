@@ -21,20 +21,22 @@
 
   <body>
     <!-- Navigation Bar -->
-    <header>
-      <div class="navbar">
-        <div class="nav-bitmoji-holder">
-          <img src="images/vivekCircle.png" alt="bitmoji" class="bitmoji" />
-        </div>
-        <div class="navSection">
-          <ul class="nav-ul" type="none">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <nav>
+      <div class="logo"><img src="images/man.svg" alt="man-bitmoji"></div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-button" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+      <ul>
+        <li><a class="active-bg" href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
 
     <!-- Top Section -->
     <div class="top-container">
@@ -96,5 +98,10 @@
         <p>&#169; 2022 <span> <a href="index.html">Vivek Tripathi.</a></span> All Right Reserved</p>
       </div>
     </footer>
+    <script>
+      function myFunction(x) {
+          x.classList.toggle("change");
+      }
+    </script>
   </body>
 </html>
