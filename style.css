@@ -7,7 +7,9 @@ body{
     font-family: serif;
     background-color: rgb(227, 241, 245);
 }
-
+h1{
+    font-weight: normal;
+}
 /* Navigation Bar */
 nav{
     background-color: rgb(227, 241, 245);
