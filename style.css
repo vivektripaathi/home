@@ -1,34 +1,35 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     margin: 0;
     text-align: center;
     font-family: serif;
     background-color: rgb(227, 241, 245);
 }
-h1{
+h1 {
     font-weight: normal;
 }
 /* Navigation Bar */
-nav{
+nav {
     background-color: rgb(227, 241, 245);
-    padding:0;
-    margin: 0;
-    height: 100px;
+    height: 80px; /* Fixed height for the nav */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
+    position: relative;
 }
-nav .logo img{
+nav .logo img {
     width: 72px;
 }
-.menu-button{
+.menu-button {
     display: none;
 }
-.bar1, .bar2, .bar3{
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background: rgb(53, 190, 190);
@@ -39,22 +40,24 @@ nav .logo img{
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+    opacity: 0;
+}
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-#click{
+#click {
     display: none;
 }
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
 }
-nav ul li{
+nav ul li {
     margin: 0 5px;
 }
-nav ul li a{
+nav ul li a {
     color: rgb(53, 190, 190);
     text-decoration: none;
     font-size: 1.1em;
@@ -64,58 +67,125 @@ nav ul li a{
     border-radius: 5px;
     transition: all 0.5s ease;
 }
-nav ul li a:hover,nav ul li a.active-bg{
+nav ul li a:hover,
+nav ul li a.active-bg {
     background-color: rgb(5, 197, 187);
     color: white;
 }
 
 /* Top Container */
-.top-container{
-    margin-top: 6%;
+/* Navigation Bar */
+nav {
     background-color: rgb(227, 241, 245);
+    height: 80px; /* Fixed height for the nav */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    position: relative;
 }
-.mountain-img{
-    margin-top: 100px;
-    width: 50%;
+
+/* Top Container */
+.top-container {
+    height: calc(100vh - 80px); /* Remaining height after nav bar */
+    background-color: rgb(227, 241, 245);
+    position: relative; /* For the absolute positioning of the mountain holder */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 200px; /* Adds space at the bottom to prevent overlap */
 }
-h1{
-    display: inline;
+
+/* Text inside the top container */
+.top-container h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 5em;
     color: rgb(5, 197, 187);
+    margin-bottom: 0.1em;
 }
-.sub-heading{
+
+.top-container .sub-heading {
     color: #31bea0;
-    margin: 0 auto;
     font-size: 1.8em;
     font-family: 'Pacifico', cursive;
+    margin: 0;
 }
-.mountain-holder{
-    margin: auto;
+
+/* Mountain Holder */
+.mountain-holder {
+    position: absolute;
+    bottom: 0;
+    width: 50vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mountain-img {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-container h1 {
+        font-size: 3em;
+    }
+
+    .top-container .sub-heading {
+        font-size: 1.2em;
+    }
+
+    .mountain-holder {
+        width: 70vw;
+    }
+
+    .top-container {
+        padding-bottom: 150px; /* Adjust space for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .top-container h1 {
+        font-size: 2.5em;
+    }
+
+    .top-container .sub-heading {
+        font-size: 1em;
+    }
+
+    .mountain-holder {
+        width: 80vw;
+    }
+
+    .top-container {
+        padding-bottom: 100px; /* Further adjust space for very small screens */
+    }
 }
 
 /* Middle Section */
-.middle-section{
+.middle-section {
     background-color: rgb(241, 241, 241);
     padding-top: 100px;
 }
 
 /* Hey Section */
-.hi{
+.hi {
     width: 50%;
     margin: auto;
 }
-.main-image{
+.main-image {
     width: 25%;
 }
-h3{
+h3 {
     font-size: 2em;
     color: rgb(5, 197, 187);
     text-align: center;
     margin: 0;
     padding: 0.5em 0;
 }
-.intro{
+.intro {
     width: 65%;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -123,7 +193,7 @@ h3{
     color: grey;
     line-height: 2;
 }
-hr{
+hr {
     border: dotted rgb(202, 198, 198) 6px;
     border-bottom: none;
     width: 4%;
@@ -132,12 +202,12 @@ hr{
 
 /* What I can Do Section */
 
-h4{
+h4 {
     color: #31bea0;
     font-size: 1.5em;
     margin-bottom: 0;
 }
-.design{
+.design {
     width: 50%;
     margin: 100px auto;
     text-align: left;
@@ -146,12 +216,12 @@ h4{
     font-size: large;
     color: grey;
 }
-.man-bitmoji{
+.man-bitmoji {
     width: 21%;
     float: right;
     margin-left: 50px;
 }
-.develop{
+.develop {
     width: 50%;
     margin: 100px auto;
     text-align: left;
@@ -160,14 +230,14 @@ h4{
     font-size: large;
     color: grey;
 }
-.develop-bitmoji{
+.develop-bitmoji {
     width: 25%;
     float: left;
     margin-right: 50px;
 }
 
 /* I can help */
-.icanhelp{
+.icanhelp {
     width: 50%;
     margin: 100px auto;
     line-height: 2;
@@ -175,30 +245,29 @@ h4{
     font-size: large;
     color: grey;
 }
-.message-me{
+.message-me {
     display: inline;
     color: grey;
 }
-.mail-box{
+.mail-box {
     margin: 100px 35%;
     background-color: #45b29a;
     border: 5px solid #45b29a;
 }
-.last-hr{
+.last-hr {
     border: dotted rgb(241, 241, 241) 6px;
     border-bottom: none;
     width: 4%;
     margin: 50px auto;
 }
 
-
 /* Footer Section */
-.footer-social-media{
+.footer-social-media {
     display: flex;
     width: 50%;
     /* margin: auto; */
 }
-.footer-ul{
+.footer-ul {
     display: flex;
     font-family: sans-serif;
     padding: 0;
@@ -207,15 +276,15 @@ h4{
     font-size: 20px;
     border-left: 6px solid #45b29a;
 }
-footer ul li{
+footer ul li {
     padding: 23%;
-    font-size: 20px;    
+    font-size: 20px;
 }
-footer a{
+footer a {
     color: rgb(53, 190, 190);
     text-decoration: none;
 }
-.footer-copyright{
+.footer-copyright {
     display: inline;
     width: 50%;
     margin: auto;
@@ -223,19 +292,19 @@ footer a{
     font-size: large;
     color: grey;
 }
-.footer-copyright p{
+.footer-copyright p {
     margin-bottom: 50px;
 }
 
 @media (max-width: 940px) {
-    .menu-button{
+    .menu-button {
         display: inline-block;
     }
-    nav{
+    nav {
         top: 0px;
         padding: 0 50px 0 50px;
     }
-    nav ul{
+    nav ul {
         display: block;
         position: fixed;
         top: 100px;
@@ -245,26 +314,27 @@ footer a{
         background-color: rgb(227, 241, 245);
         transition: all 0.5s ease;
     }
-    #click:checked ~ ul{
+    #click:checked ~ ul {
         left: 0;
     }
-    nav ul li{
+    nav ul li {
         margin: 40px 0;
         text-align: center;
     }
-    nav ul li a{
+    nav ul li a {
         font-size: 1.5em;
         display: block;
     }
-    nav ul li a:hover, nav ul li a.active-bg{
+    nav ul li a:hover,
+    nav ul li a.active-bg {
         color: cyan;
         background: none;
     }
-    .top-container{
+    .top-container {
         margin-top: 15%;
         background-color: rgb(227, 241, 245);
     }
-    .mountain-img{
+    .mountain-img {
         margin-top: 150px;
         width: 100%;
     }
