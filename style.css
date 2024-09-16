@@ -19,7 +19,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 0.5s;
 }
 nav .logo img {
     width: 72px;
@@ -74,21 +78,8 @@ nav ul li a.active-bg {
 }
 
 /* Top Container */
-/* Navigation Bar */
-nav {
-    background-color: rgb(227, 241, 245);
-    height: 80px; /* Fixed height for the nav */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 100px;
-    position: relative;
-}
-
-/* Top Container */
 .top-container {
-    height: calc(100vh - 80px); /* Remaining height after nav bar */
+    height: 101vh; /* Remaining height after nav bar */
     background-color: rgb(227, 241, 245);
     position: relative; /* For the absolute positioning of the mountain holder */
     display: flex;
