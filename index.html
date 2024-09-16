@@ -1,169 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Vivek Tripathi</title>
-        <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" href="images/vivekCircle.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap"
-            rel="stylesheet"
-        />
-    </head>
+    <title>Vivek Tripathi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <body>
-        <!-- Navigation Bar -->
-        <nav id="navbar">
-            <div class="logo">
-                <img src="images/man.svg" alt="man-bitmoji" />
+    <link rel="icon" href="images/vivekCircle.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="images/man.svg" alt="man-bitmoji" />
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-button" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
+        <ul>
+            <li><a class="active-bg" href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Top Section -->
+    <div class="top-container">
+        <h1><i>I'm Vivek</i></h1>
+        <p class="sub-heading">a software developer</p>
+        <div class="mountain-holder">
+            <img src="images/bg.svg" alt="mountain-clipart" class="mountain-img" />
+        </div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle-section">
+        <div class="hi">
+            <img src="images/man.svg" alt="main-image" class="main-image" />
+            <h3>Hey</h3>
+            <p class="intro">
+                I'm a full stack web developer based in Lucknow, India. I
+                have a passion for web dev and love to create for web.
+            </p>
+        </div>
+        <hr />
+        <div class="whaticando">
+            <h3>What I can do</h3>
+            <div class="design">
+                <img src="images/man.svg" alt="pentool" class="man-bitmoji" />
+                <h4>Design what you want</h4>
+                <p>
+                    I like to keep it simple. My goals are to focus on
+                    typography, content and conveying the message that you
+                    want to send.
+                </p>
             </div>
-            <input type="checkbox" id="click" />
-            <label for="click" class="menu-button" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </label>
-            <ul>
-                <li><a class="active-bg" href="index.html">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Feedback</a></li>
+            <div class="develop">
+                <img src="images/develop-bitmoji.svg" alt="bitmoji" class="develop-bitmoji" />
+                <h4>Develop what you need</h4>
+                <p>
+                    I'm a developer, so I know how to create your website to
+                    run across devices using the latest technologies
+                    available.
+                </p>
+            </div>
+        </div>
+        <hr />
+        <div class="icanhelp">
+            <h3>I can help.</h3>
+            <h4>I'm currently available for freelance work.</h4>
+            <p>
+                If you have a project that you want to get started, think
+                you need my help with something or just fancy saying hey,
+                then get in touch.
+            </p>
+            <div class="mail-box">
+                <img src="images/mail.png" alt="mail-icon" />
+                <a href="mailto: vivektripathi8005@gmail.com" class="message-me">MESSAGE ME</a>
+            </div>
+        </div>
+        <hr class="last-hr" />
+    </div>
+
+    <footer>
+        <div class="footer-social-media">
+            <ul type="none" class="footer-ul">
+                <li>
+                    <a href="https://www.linkedin.com/in/wampire-vivek-stylish/?_l=en_US" target="_blank"
+                        class="fa fa-linkedin"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Vivek_9005" target="_blank" class="fa fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_vivek_tripathi_401/" target="_blank"
+                        class="fa fa-instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.snapchat.com/add/vivek_9005" target="_blank" class="fa fa-snapchat"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/vivektripathi-9005" target="_blank" class="fa fa-github"></a>
+                </li>
             </ul>
-        </nav>
-
-        <!-- Top Section -->
-        <div class="top-container">
-            <h1><i>I'm Vivek</i></h1>
-            <p class="sub-heading">a software developer</p>
-            <div class="mountain-holder">
-                <img
-                    src="images/bg.svg"
-                    alt="mountain-clipart"
-                    class="mountain-img"
-                />
-            </div>
         </div>
-
-        <!-- Middle Section -->
-        <div class="middle-section">
-            <div class="hi">
-                <img src="images/man.svg" alt="main-image" class="main-image" />
-                <h3>Hey</h3>
-                <p class="intro">
-                    I'm a full stack web developer based in Lucknow, India. I
-                    have a passion for web dev and love to create for web.
-                </p>
-            </div>
-            <hr />
-            <div class="whaticando">
-                <h3>What I can do</h3>
-                <div class="design">
-                    <img
-                        src="images/man.svg"
-                        alt="pentool"
-                        class="man-bitmoji"
-                    />
-                    <h4>Design what you want</h4>
-                    <p>
-                        I like to keep it simple. My goals are to focus on
-                        typography, content and conveying the message that you
-                        want to send.
-                    </p>
-                </div>
-                <div class="develop">
-                    <img
-                        src="images/develop-bitmoji.svg"
-                        alt="bitmoji"
-                        class="develop-bitmoji"
-                    />
-                    <h4>Develop what you need</h4>
-                    <p>
-                        I'm a developer, so I know how to create your website to
-                        run across devices using the latest technologies
-                        available.
-                    </p>
-                </div>
-            </div>
-            <hr />
-            <div class="icanhelp">
-                <h3>I can help.</h3>
-                <h4>I'm currently available for freelance work.</h4>
-                <p>
-                    If you have a project that you want to get started, think
-                    you need my help with something or just fancy saying hey,
-                    then get in touch.
-                </p>
-                <div class="mail-box">
-                    <img src="images/mail.png" alt="mail-icon" />
-                    <a
-                        href="mailto: vivektripathi8005@gmail.com"
-                        class="message-me"
-                        >MESSAGE ME</a
-                    >
-                </div>
-            </div>
-            <hr class="last-hr" />
+        <div class="footer-copyright">
+            <p>
+                &#169; 2022
+                <span> <a href="index.html">Vivek Tripathi.</a></span> All
+                Right Reserved
+            </p>
         </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 
-        <footer>
-            <div class="footer-social-media">
-                <ul type="none" class="footer-ul">
-                    <li>
-                        <a
-                            href="https://www.linkedin.com/in/wampire-vivek-stylish/?_l=en_US"
-                            target="_blank"
-                            class="fa fa-linkedin"
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://twitter.com/Vivek_9005"
-                            target="_blank"
-                            class="fa fa-twitter"
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.instagram.com/_vivek_tripathi_401/"
-                            target="_blank"
-                            class="fa fa-instagram"
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.snapchat.com/add/vivek_9005"
-                            target="_blank"
-                            class="fa fa-snapchat"
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://github.com/vivektripathi-9005"
-                            target="_blank"
-                            class="fa fa-github"
-                        ></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-copyright">
-                <p>
-                    &#169; 2022
-                    <span> <a href="index.html">Vivek Tripathi.</a></span> All
-                    Right Reserved
-                </p>
-            </div>
-        </footer>
-        <script src="script.js"></script>
-    </body>
 </html>
